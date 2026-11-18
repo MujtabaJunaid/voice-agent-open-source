@@ -1,0 +1,6 @@
+pipecat-ai[livekit,whisper,kokoro]
+livekit-api
+fastapi
+uvicorn[standard]
+python-dotenv
+loguru

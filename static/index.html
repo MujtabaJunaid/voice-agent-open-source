@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lakeview Family Clinic — Agent Call</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone">
+    <header class="phone__header">
+      <div class="avatar">A</div>
+      <div class="who">
+        <div class="name">Aria · Lakeview Family Clinic</div>
+        <div class="status" id="status">watching for the call to start</div>
+      </div>
+    </header>
+
+    <main class="thread" id="thread">
+      <div class="bubble bubble--aria">
+        Start Aria and My Assistant in their own terminals, then watch here — this page just
+        listens in and shows what gets booked.
+      </div>
+    </main>
+
+    <section class="booking" id="booking" hidden>
+      <div class="booking__label">Booked</div>
+      <div class="booking__details" id="bookingDetails"></div>
+    </section>
+
+    <footer class="phone__footer">
+      <button id="watchBtn" class="call-btn" aria-label="Watch the call">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9zm0-7A2.5 2.5 0 1 0 12 14a2.5 2.5 0 0 0 0-5z"/>
+        </svg>
+      </button>
+      <div class="call-label" id="callLabel">Watch call</div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/livekit-client/2.23.0/livekit-client.umd.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
